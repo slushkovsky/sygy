@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="SYGY designs and manufactures the AI solutions to improve restaurants and cafes: loyalty programs, bonus progmras, call to service detection, deep marketing" />
+		<meta name="keywords" content="SYGY, AI, computer vision, HoReCa, restaurant, cafe, coffeeshop, loyalty, bonus, waiter, service, guest, merketing, face, detection, recognition, automotization, customer, IIKO, rkeeper" />
+		<title>SYGY</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="/static/css/index.css">
+		<link rel="stylesheet" href="/static/css/nav.css">
+	</head>
+	<body>
+		{% include 'nav.html' %}
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active" style="background-image: url('/static/img/index/product_loyalty.jpg');" role="button" onclick="window.location.href='guest.html';">
+					<div class="container text-center">
+						<div>
+							<h2>iGuest</h2>
+							<h3>Знаем каждого клиента. Без карт и приложений.</h3>
+							<button class="btn btn-primary">Попробовать</button>
+							<button class="btn btn-secondary">Подробнее</button>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item" style="background-image: url('/static/img/index/product_service.jpg');" role="button" onclick="window.location.href='service.html';">
+					<div class="container text-center">
+						<div>
+							<h2>iService</h2>
+							<h3>Определение намерений клиента за доли секунды</h3>
+							<button class="btn btn-primary">Попробовать</button>
+							<button class="btn btn-secondary">Подробнее</button>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item" style="background-image: url('/static/img/index/product_waiter.jpg');" role="button" onclick="window.location.href='service.html';">
+					<div class="container text-center">
+						<div>
+							<h2>iWaiter</h2>
+							<h3>Подбор лучшего официанта.</h3>
+							<button class="btn btn-primary">Попробовать</button>
+							<button class="btn btn-secondary">Подробнее</button>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item" style="background-image: url('/static/img/index/product_marketing.jpg');" role="button" onclick="window.location.href='service.html';">
+					<div class="container text-center">
+						<div>
+							<h2>iMarketer</h2>
+							<h3>Портет гостся для каждого чека. Более 300 метрик.</h3>
+							<button class="btn btn-primary">Попробовать</button>
+							<button class="btn btn-secondary">Подробнее</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			
+			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	</body>
+</html>
