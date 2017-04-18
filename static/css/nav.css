@@ -1,5 +1,15 @@
-.nav {
-	height: 7%;
-	background-color: black; 
-	opacity: .98;
+nav {
+	height: 6%;
+	background-color: black !important; 
+	opacity: .95;
+}
+
+
+nav a {
+	color: rgba(255,255,255,1) !important;
+	font-size: 1.1em;
+}
+
+nav a:hover {
+	color: rgba(255,255,255,.8) !important;
 }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="/static/img/logo_dark_sqr.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="/static/css/nav.css">
+
+		{% block head %}{% endblock %}
+	</head>
+
+	<body>
+		<nav class="navbar navbar-toggleable-md bg-faded navbar-inverse p-0">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="container">	
+					<div class="clearfix"> 
+					<a class="navbar-brand d-inline-block" href="/">
+						<img src="/static/img/logo_white_sqr.png" width="35" height="35" class="d-inline-block align-top" alt="[img: logo]">
+					</a>
+					<ul class="navbar-nav mr-auto d-inline-flex">
+						<li class="nav-item">
+							<a class="nav-link" href="/eyeGuest">eyeGuest</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/eyeWish">eyeWish</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/eyeService">eyeService</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/eyeMerketer">eyeMarketer</a>
+						</li>
+						
+					</ul>
+					<ul class="navbar-nav float-right">
+						<li class="nav-item">
+							<a class="nav-link" href="/about">About us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/support">Support</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		{% block body %}{% endblock %}
+
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	</body>
+</html>
