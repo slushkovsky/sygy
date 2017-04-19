@@ -1,15 +1,19 @@
-h1, 
-h2 {
-	font-weight: 300 !important;
-	color: white;
-}
-
 html,
 body {
 	height: 100%;
 }
 
-section {
-	height: 94%;  /* NOTE: navbar height is 6% */
+header {
+	height: 92.5%;  /* NOTE: navbar height is 7.5% */
 	background-size: cover;
+}
+
+header h1, 
+header h2 {
+	font-weight: 300 !important;
+	color: white;
+}
+
+section {
+	height: 80%;
 }
