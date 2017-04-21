@@ -25,7 +25,7 @@ SECRET_KEY = 'ns47luc-5=6m)3ox&2j0%=6nz_kxu^q%n@)cqz9&-epmpguieh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'sygy.ru']
 
 
 # Application definition

@@ -25,6 +25,7 @@ header .container {
 	transform: translate(-50%, -50%);
 	
 	padding: 3%; 
+	max-height: 80%;
 
 	background-color: rgba(42,42,42,.975); 
 }
