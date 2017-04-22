@@ -1,22 +1,66 @@
-{% extends './_base.html' %}
+{% extends './_product_page.html' %}
 
-{% block head %}
-	<title>eyeWish - SYGY</title>
+{% block product_page_name %}Eye-Wish{% endblock %}
+{% block product_name %}Eye-Wish{% endblock %}
+{% block header_img %}/static/img/eyeWish/header.jpg{% endblock %}
+{% block motivation %}Find out your client intents in a few seconds.{% endblock %}
 
-	<link rel="stylesheet" href="static/css/product_page.css">
+{% block col_1 %}
+	<h3>Description</h3> 
+	Eye-Service is AI based technology for match best waiter to each group f your guests. 
+	Some some some some some text tex text text here<br>
+	BTW: 
+	<ul>
+		<li>HR</li>
+		<li>Guests prioritize</li>
+	</ul>
 {% endblock %}
 
-{% block body %}
-	<section style="background-image: url('/static/img/eyeWish/header.jpg');"> 
-		<div class="container text-center">
-			<div>
-				<h1>eyeWish</h1>
-				<h2>Определение намерений клиента за доли секунды.</h2>
-				<button class="btn btn-primary">Попробовать</button>
-				<button class="btn btn-secondary">Подробнее</button>
-			</div>
+{% block col_2 %}  
+	<h3>Integration</h3>
+
+	<div class="row no-gutters mb-2">
+		<div class="col-2 px-2">
+			<img class="img-fluid" src="/static/img/camera.png" alt=""> 
 		</div>
-	</section>
-{% endblock %}
+		<div class="col">
+			x2 camers 
+		</div>
+	</div>
 
+	<div class="row no-gutters mb-2">
+		<div class="col-2 px-2">
+			<img class="img-fluid" src="/static/img/pos.png" alt=""> 
+		</div>
+		<div class="col">
+			POS plugin (IIKO, RKeeper, 1C) 
+		</div>
+	</div> 
+{% endblock %} 
+
+{% block col_3 %}
+	<h3 class="mb-3">Pricing</h3> 
+
+	<table class="table">
+		<thead> 
+			<tr>
+				<th style="border-top: none;">Venue type</th>
+				<th style="border-top: none;">Installation</th>
+				<th style="border-top: none;">Usage (per 1000 guests)</th>
+			</tr>
+		</thead>
+		<tbody> 
+			<tr> 
+				<td>Window</td>
+				<td>$660</td>
+				<td>$14</td>
+			</tr>
+			<tr> 
+				<td>Fornt desk</td>
+				<td>$840</td>
+				<td>$16</td>
+			</tr>
+		</tbody>
+	</table>
+{% endblock %}
 

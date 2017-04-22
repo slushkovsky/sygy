@@ -1,0 +1,40 @@
+{% extends './_base.html' %}
+
+{% block head %}
+	<title>{% block product_page_name %}{% endblock %} - SYGY</title>
+
+	<link rel="stylesheet" href="static/css/product_page.css">
+{% endblock %}
+
+{% block body %}
+	<header style="background-image: url('{% block header_img %}{% endblock %}');"> 
+		<div class="container text-center">
+			<div id="bg">
+				<div id="text">  
+					<h1>{% block product_name %}{% endblock %}</h1>
+					<h2 class="display-4">{% block motivation %}{% endblock %}</h2>
+					<hr class="mb-4">
+					{% block content %}{% endblock %}
+
+					<div class="row px-4 mb-4 text-left">
+						<div class="col">
+							{% block col_1 %}{% endblock %}
+						</div>
+						<div class="col">  
+							{% block col_2 %}{% endblock %}
+						</div>
+						<div class="col">
+							{% block col_3 %}{% endblock %}
+						</div>
+					</div>
+
+					<button 
+						class="btn btn-try text-uppercase"
+						data-toggle="modal" 
+						data-target="#modal-join"
+					>Try</button> 
+				</div>
+			</div>
+		</div>
+	</header>
+{% endblock %}

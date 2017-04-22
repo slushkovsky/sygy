@@ -1,61 +1,65 @@
-{% extends './_base.html' %}
+{% extends './_product_page.html' %}
 
-{% block head %}
-	<title>eyeService - SYGY</title>
+{% block product_page_name %}Eye-Service{% endblock %}
+{% block product_name %}Eye-Service{% endblock %}
+{% block header_img %}/static/img/eyeService/header.jpg{% endblock %}
+{% block motivation %}Best waiter for each guest.{% endblock %}
 
-	<link rel="stylesheet" href="static/css/product_page.css">
+{% block col_1 %}
+	<h3>Description</h3> 
+	Eye-Service is AI based technology for match best waiter to each group f your guests. 
+	Some some some some some text tex text text here<br>
+	BTW: 
+	<ul>
+		<li>HR</li>
+		<li>Guests prioritize</li>
+	</ul>
 {% endblock %}
 
-{% block body %}
-	<header style="background-image: url('/static/img/eyeService/header.jpg');"> 
-		<div class="container text-center" style="">
-			<h1 class="">Eye-Service</h1>
-			<h2 class="display-3">Best waiter for each guest</h2>
-			<hr class="mb-4">
-			<div class="row px-4 mb-4 text-left">
-				<div class="col">
-					<h3>Description</h3> 
-					Eye-Service is AI based technology for match best waiter to each group f your guests. 
-					Some some some some some text tex text text here<br>
-					BTW: 
-					<ul>
-						<li>HR</li>
-						<li>Guests prioritize</li>
-					</ul>
-				</div>
-				<div class="col">  
-					<h3>Integration</h3>
+{% block col_2 %}  
+	<h3>Integration</h3>
 
-					<div class="row no-gutters mb-2">
-						<div class="col-2 px-2">
-							<img class="img-fluid" src="/static/img/camera.png" alt=""> 
-						</div>
-						<div class="col">
-							x2 camers 
-						</div>
-					</div>
-
-					<div class="row no-gutters mb-2">
-						<div class="col-2 px-2">
-							<img class="img-fluid" src="/static/img/pos.png" alt=""> 
-						</div>
-						<div class="col">
-							POS plugin (IIKO, RKeeper, 1C) 
-						</div>
-					</div> 
-				</div>	
-				<div class="col">
-					<h3>Prices</h3> 
-				</div>
-			</div>
-			
-			<button 
-				class="btn btn-try text-uppercase"
-				data-toggle="modal" 
-				data-target="#modal-join"
-			>Try</button>
+	<div class="row no-gutters mb-2">
+		<div class="col-2 px-2">
+			<img class="img-fluid" src="/static/img/camera.png" alt=""> 
 		</div>
-	</header>
+		<div class="col">
+			x2 camers 
+		</div>
+	</div>
+
+	<div class="row no-gutters mb-2">
+		<div class="col-2 px-2">
+			<img class="img-fluid" src="/static/img/pos.png" alt=""> 
+		</div>
+		<div class="col">
+			POS plugin (IIKO, RKeeper, 1C) 
+		</div>
+	</div> 
+{% endblock %} 
+
+{% block col_3 %}
+	<h3 class="mb-3">Pricing</h3> 
+
+	<table class="table">
+		<thead> 
+			<tr>
+				<th style="border-top: none;">Venue type</th>
+				<th style="border-top: none;">Installation</th>
+				<th style="border-top: none;">Usage (per 1000 guests)</th>
+			</tr>
+		</thead>
+		<tbody> 
+			<tr> 
+				<td>Window</td>
+				<td>$660</td>
+				<td>$14</td>
+			</tr>
+			<tr> 
+				<td>Fornt desk</td>
+				<td>$840</td>
+				<td>$16</td>
+			</tr>
+		</tbody>
+	</table>
 {% endblock %}
-
-
