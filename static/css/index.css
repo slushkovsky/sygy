@@ -3,25 +3,11 @@ body {
 	height: 100%;
 }
 
-h2, h3 {
+h2, h3, h4 {
 	/*color: white;*/
 	font-weight: 300 !important;
 }
 
-.btn-primary {
-	background-color: white !important;
-	color: black !important;
-	border: none !important;
-}
-
-.btn-secondary {
-	background-color: transparent !important;
-	color: white !important;
-	
-	border-style: solid !important;
-	border-width: .01rem !important;
-	border-color: white !important;
-}
 
 header {
 	height: 50%;

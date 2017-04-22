@@ -12,31 +12,60 @@
 		<div class="container h-100" style="position: relative;">
 			<div class="row w-100 no-gutters" style="position: absolute; left:50%; top:50%; transform: translate(-50%,-50%);">
 				<div class="col-6 text-center" style="border-right-style: solid; border-right-width: .01rem; border-right-color: #ddd;">
-					<h3 class="text-uppercase mb-4" style="font-weight: 300;">Команда</h3> 
+					<h3 class="text-uppercase mb-4" style="font-weight: 300;">Team</h3> 
 
-					<div class="row justify-content-center"> 
-						<div class="col-5 text-center">
-							<img class="rounded-circle px-4 my-2 img-fluid" src="/static/img/about/team_ladenkov.jpg" alt="[img: Ladenkov photo]">
+					<div class="row justify-content-center px-4" style="font-size: .9em;"> 
+						<div class="col-4 text-center">
+							<img class="rounded-circle px-2 my-2 img-fluid" src="/static/img/about/team_ladenkov.jpg" alt="[img: Ladenkov photo]">
 							Vladislav Ladenkov<br> 
 							<small><i class="fa fa-envelope d-inline"></i> No.Spare.Nicks.Left@gmail.com</small>
 						</div>
-						<div class="col-5 text-center">
-							<img class="rounded-circle px-4 my-2 img-fluid" src="/static/img/about/team_lushkovsky.jpg" alt="[img: Lushkovsky photo]">
+						<div class="col-4 text-center">
+							<img class="rounded-circle px-2 my-2 img-fluid" src="/static/img/about/team_lushkovsky.jpg" alt="[img: Lushkovsky photo]">
 							Sergey Lushkovsky<br>
 							<small><i class="fa fa-envelope d-inline"></i> s.lushkovsky@gmail.com</small><br>
-							<small><i class="fa fa-phone"></i> +7 (910) 452-26-58</small>
+							<small><i class="fa fa-phone"></i> +7 (926) 696-17-26</small>
+						</div>
+						<div class="col-4 text-center">
+							<img class="rounded-circle px-2 my-2 img-fluid" src="/static/img/about/team_lipatova.jpg" alt="[img: Lipatova photo]">
+							Kate Lipatova<br>
+							<small><i class="fa fa-envelope d-inline"></i> cote.lipatova@gmail.com</small><br>
 						</div>
 					</div>
 				</div>
 				<div class="col-6 text-center px-5"> 
-					<h3 class="text-uppercase mb-4" style="font-weight: 300;">Реквизиты</h3>
-					ООО "Чек-стар"<br>
-					142186, Россия, Московская обл., город Подольск, Больничный проезд, д.2, корп. 1
+					<h3 class="text-uppercase mb-4" style="font-weight: 300;">requisites</h3>
+					Checkstar LLC<br>
+					142186, Russia, Moscow region., Podolsk, Hospitalny proezd, 2, bldg. 1
+
+					<!-- <div class="mt-3" id="map" style="height: 10rem;"></div> -->
 				</div>
 			</div>
 
 		</div>
 	</section>
+
+	 <script> 
+            function initMap() {
+                var point = {lat: 55.433334, lng: 37.545649};
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    scrollwheel: false,
+                    navigationControl: true,
+                    mapTypeControl: false,
+                    scaleControl: false,
+                    draggable: true,
+                    center: point
+                });
+
+                new google.maps.Marker({
+                    position: point,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOTjVgbcCH_QMZFsskcCGAtBhqeVLGbeE&callback=initMap"></script>
 {% endblock %}
 
 
